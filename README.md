@@ -73,3 +73,8 @@ circle(150, 80, 30, 0);
 // Texto com escala 2x (x, y, cor_texto, fundo, string, escala)
 printstr_scaled(20, 100, 0, -1, (unsigned char*)"Hello World!", 2);
 ```
+Créditos
+
+Este projeto foi baseado em um código de código aberto. Agradecimentos ao autor original pela base de desenvolvimento utilizada. Se desejar conhecer o trabalho original, consulte aqui: https://github.com/offpic/PACMAN-GAME-STM32-TFT-ILI9341-SPI-STM32F401
+
+
