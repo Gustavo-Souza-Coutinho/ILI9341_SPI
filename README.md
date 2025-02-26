@@ -73,33 +73,3 @@ circle(150, 80, 30, 0);
 // Texto com escala 2x (x, y, cor_texto, fundo, string, escala)
 printstr_scaled(20, 100, 0, -1, (unsigned char*)"Hello World!", 2);
 ```
-
-## Código Fonte Principal
-
-Trecho essencial da implementação:
-
-```c
-// Inicialização do SPI
-void LCD_Init(void) {
-  // Configuração dos pinos
-  ILI9341_CS_hi();
-  ILI9341_DC_hi();
-  
-  // Sequência de inicialização do display
-  LCD_WriteComm(0xCF);
-  LCD_WriteData(0x00);
-  LCD_WriteData(0xC1);
-  LCD_WriteData(0x30);
-  
-  // Configuração adicional...
-}
-
-// Função de desenho de pixel
-void drawPixel(unsigned short x, unsigned short y, unsigned short color) {
-  if(x < X_RES && y < Y_RES) {
-    LCD_SetCursor(x, y);
-    LCD_WriteData2(color);
-  }
-}
-```
-
