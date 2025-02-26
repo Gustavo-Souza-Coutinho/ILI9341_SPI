@@ -24,9 +24,9 @@ Conexões básicas entre o STM32 e o display ILI9341:
 | SPI_SCK     | PA5         | CLK          |
 | SPI_MISO    | PA6         | MISO         |
 | SPI_MOSI    | PA7         | MOSI         |
-| CS          | PA4         | CS           |
+| CS          | PB5         | CS           |
 | DC          | PA8         | DC           |
-| RESET       | PA9         | RESET        |
+| RESET       | PA10        | RESET        |
 
 ## Como Usar
 
